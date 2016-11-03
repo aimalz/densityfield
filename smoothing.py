@@ -27,12 +27,12 @@ smoothrhos = np.zeros(len(rhos))
 for i in range(0, len(rhos)):
     sum1 = 0
     sum2 = 0
-    for j in range(0, len(rhos)):
-        k = kernel(redshifts[i], redshifts[j]) #I know this is terrible, and slow, and I am very sorry
+    for j in range(max(0,i-100), min(len(rhos)-1,i+100)):
+        k = kernel(redshifts[i], redshifts[j]) 
         sum1 += k*rhos[j]
         sum2 += k
     smoothrhos[i] = sum1/sum2
-    print smoothrhos[i]
+
 
 print smoothrhos
 
