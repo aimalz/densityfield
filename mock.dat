@@ -1,0 +1,7 @@
+#redshift	density		error_lower	error_higher
+1.		1.		.2		.3
+2.		2.		.3		.3
+3.		2.		.1		.3
+4.		3		.3		.2
+5.		2.5		.4		.4
+6.		1.		.1		.15
